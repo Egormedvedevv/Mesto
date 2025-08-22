@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mestö</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/fav.png" />
+  </head>
+  <body>
+      <img src="images/pconly.png" alt="PC only" class="pconly-banner" />
+
+    <header id="home" class="intro">
+      <img src="images/backgr.png" class="backgr" alt="Фон" />
+      <img src="images/text.png" class="text" alt="Mestö text" />
+      <img
+        src="images/upperblock.png"
+        class="upperblock"
+        alt="Декор верхнего блока"
+      />
+    </header>
+
+    <nav class="top-buttons">
+      <div class="left-buttons">
+        <a href="#home" class="btn">Home</a>
+        <a href="#rent" class="btn">Rent</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+      <div class="right-buttons">
+        <button class="btn">Account</button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <section class="explore-section">
+        <img src="images/explore.png" alt="Explore" class="explore-img" />
+      </section>
+
+      <section id="rent" class="carousel-section">
+        <div class="places-img-container">
+          <img src="images/places.png" alt="Places" class="places-img" />
+        </div>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow left-arrow" aria-label="Previous">
+            &#8592;
+          </button>
+
+          <div class="carousel">
+            <div class="carousel-item active">
+              <img src="images/place2.jpg" alt="Place 1" />
+              <button class="more-btn">More</button>
+            </div>
+            <div class="carousel-item">
+              <img src="images/place1.jpg" alt="Place 2" />
+              <button class="more-btn">More</button>
+            </div>
+            <div class="carousel-item">
+              <img src="images/place3.jpg" alt="Place 3" />
+              <button class="more-btn">More</button>
+            </div>
+            <div class="carousel-item">
+              <img src="images/place4.jpg" alt="Place 4" />
+              <button class="more-btn">More</button>
+            </div>
+          </div>
+
+          <button class="carousel-arrow right-arrow" aria-label="Next">
+            &#8594;
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="services-section">
+      <img src="images/services.png" alt="services" class="services-img" />
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery-content">
+        <div class="gallery-text">
+          <p id="service-description">Fine restaurant with cozy atmosphere. 
+            Enjoy a carefully curated menu crafted by top chefs, offering both local and international flavors. 
+            The warm and inviting design makes it the perfect spot for both casual dinners and special occasions. 
+            Whether you come for a quick lunch or a romantic evening,
+             the restaurant ensures an unforgettable dining experience.</p>
+        </div>
+
+        <div class="gallery-wrapper">
+          <div class="gallery-slider">
+            <img
+              src="images/serv1.jpg"
+              alt="gallery1"
+              class="gallery-item active"
+            />
+            <img src="images/serv2.jpg" alt="gallery2" class="gallery-item" />
+            <img src="images/serv3.jpg" alt="gallery3" class="gallery-item" />
+          </div>
+          <button class="gallery-arrow right-gallery-arrow">›</button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h2>Contact with us!</h2>
+          <p>Glad to talk with you</p>
+          <ul class="contact-info">
+            <li><strong>Email:</strong> example@mail.com</li>
+            <li><strong>Mobile phone:</strong> +7 (999) 123-45-67</li>
+            <li><strong>Address:</strong> NY, 15 avenue</li>
+          </ul>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+            <textarea placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div id="account-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Log in</h2>
+        <form id="account-form">
+          <input type="text" placeholder="Login" required />
+          <input type="email" placeholder="Email" required />
+          <button type="submit">Send</button>
+        </form>
+        <p id="form-message"></p>
+      </div>
+    </div>
+
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book a date</h2>
+        <form id="booking-form">
+          <label for="booking-date">Choose:</label>
+          <input type="date" id="booking-date" required />
+          <button type="submit">Book</button>
+        </form>
+        <p id="booking-message"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
