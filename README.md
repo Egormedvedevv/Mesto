@@ -4,4 +4,4 @@ It’s designed to showcase elegant UI ideas, experiment with frontend technique
 Mestö — это современный и стильный веб-проект, сочетающий минималистичный дизайн и плавные анимации. Сайт создан на HTML, CSS и JavaScript, включает уникальные интерактивные элементы.
 Он задуман как демонстрация элегантных UI-решений, экспериментальная площадка для фронтенд-приемов и основа для будущих проектов.
 
-[**Visit**]([https://egormedvedevv.github.io/CursorFace/index.html](https://egormedvedevv.github.io/Mesto/))
+[**Visit**](https://egormedvedevv.github.io/Mesto/)
